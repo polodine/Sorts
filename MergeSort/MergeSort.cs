@@ -13,7 +13,7 @@ namespace ConsoleApp3
             Console.WriteLine("Write not sorted int32 array");
             try
             {
-                string[] stringArray = Console.ReadLine().Split(new char[] { ' ', '\n', '\t' });
+                string[] stringArray = Console.ReadLine().Trim().Split(new char[] { ' ', '\n', '\t' });
                 int lengthArray = stringArray.Length;
                 int[] intArray = new int[lengthArray];
                 for (int i = 0; i < lengthArray; i++)
@@ -85,7 +85,7 @@ namespace ConsoleApp3
                     }
                 }
 
-                for (int stackLength = myStack.Count; stackLength > 0; stackLength--) // New array with sorted couples with length = merges
+                for (int stackLength = myStack.Count; stackLength > 0; stackLength--) // Array with sorted couples with length = merges
                     a[stackLength-1] = myStack.Pop();
             }
         }
