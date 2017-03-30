@@ -20,13 +20,13 @@ namespace ConsoleApp3
                 {
                     intArray[i] = Int32.Parse(stringArray[i]);
                 }
-                System.Diagnostics.Stopwatch sw = new Stopwatch();
-                sw.Start();
+                //System.Diagnostics.Stopwatch sw = new Stopwatch();
+                //sw.Start();
                 MergeSort(ref intArray, lengthArray);
-                sw.Stop();
+                //sw.Stop();
                 for (int i = 0; i < lengthArray; i++)
                     Console.Write($"{intArray[i]} ");
-                Console.WriteLine($"\nElapsed time: {sw.ElapsedMilliseconds / 100.0} seconds");
+                //TODO: Console.WriteLine($"\nElapsed time: {sw.ElapsedMilliseconds / 100.0} seconds");
                 Console.ReadKey();
             }
             catch (OverflowException)
