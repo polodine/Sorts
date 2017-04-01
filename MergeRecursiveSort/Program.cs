@@ -41,9 +41,9 @@ namespace MergeInverseSort
         {
             InverseMergeSort(ref a, 0, length);
         }
-
         static void InverseMergeSort(ref int[] a, int leftSide, int rightSide)
         {
+            
             if (rightSide - leftSide == 1) // Raise on function with 1 element
             {
                 return;
